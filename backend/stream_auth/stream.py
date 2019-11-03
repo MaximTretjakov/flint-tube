@@ -23,6 +23,7 @@ def start_stream(request):
         return HttpResponseForbidden("User already streaming.")
 
     stream.started_at = timezone.now()
+    stream.active = True
     stream.save()
 
     print(request.POST.dict())

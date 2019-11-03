@@ -7,4 +7,4 @@ class StreamSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Stream
-        fields = ('key', 'started_at')
+        fields = ('key', 'started_at', 'active')

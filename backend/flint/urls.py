@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.urls import path, include
-
 from backend.stream_auth.stream import start_stream, stop_stream
 
 

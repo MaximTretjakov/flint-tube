@@ -1,20 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import { MDBContainer, MDBCol, MDBRow, MDBInput, MDBBtn } from 'mdbreact';
 import axios from 'axios';
 
-class Login extends React.Component {
+class Login extends Component {
 
     handleInputChange = inputName => value => {
         const nextValue = value;
         this.setState({
           [inputName]: nextValue
         });
-        console.log(this.state);
       };
 
 
     sender = () => {
-        console.log(this.state);
+      let p =this.props.value;
         axios.post('http://127.0.0.1:8000/rest-auth/login/', {
             username: this.state.login,
             email: '',
@@ -22,11 +21,14 @@ class Login extends React.Component {
           })
           .then(function (response) {
             console.log(response);
+            if(response.status === 200){
+              p();
+            }
           })
           .catch(function (error) {
             console.log(error);
-          });
-    }
+          });     
+    };
 
 
     render(){

@@ -67,7 +67,7 @@ class NavbarContainer extends React.Component {
         <MDBModal isOpen={this.state.modalLogin} toggle={this.onToggleLogin}>
           <MDBModalHeader toggle={this.onToggleLogin}>MDBModal title</MDBModalHeader>
           <MDBModalBody>
-            <Login />
+            <Login value={this.onToggleLogin}/>
           </MDBModalBody>
         </MDBModal>
         </MDBContainer>

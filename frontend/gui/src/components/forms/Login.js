@@ -2,14 +2,57 @@ import React, { Component } from "react";
 import { MDBContainer, MDBCol, MDBRow, MDBInput, MDBBtn } from 'mdbreact';
 import axios from 'axios';
 
+
+const initialState = {
+  login: "",
+  password: "",
+  loginError: "",
+  passwordError: ""
+};
+
 class Login extends Component {
+
+  state = initialState;
 
     handleInputChange = inputName => value => {
         const nextValue = value;
         this.setState({
           [inputName]: nextValue
         });
+        console.log(this.state);
       };
+
+
+    validate = () => {
+      let loginError = "";
+      let passwordError = "";
+  
+      if (!this.state.login) {
+        loginError = "login field cannot be blank";
+      }
+
+      if (!this.state.password) {
+        passwordError = "password field cannot be blank";
+      }
+  
+      if (loginError || passwordError) {
+        this.setState({ loginError, passwordError });
+        return false;
+      }
+      return true;
+    };
+
+
+    handleSubmit = event => {
+      event.preventDefault();
+      const isValid = this.validate();
+      if (isValid) {
+        console.log(this.state);
+        // clear form
+        this.setState(initialState);
+        this.sender();
+      }
+    };
 
 
     sender = () => {
@@ -36,31 +79,38 @@ class Login extends Component {
             <MDBContainer>
               <MDBRow center>
                 <MDBCol>
-                  <form>
+                  <form
+                    noValidate 
+                    onSubmit={this.handleSubmit}
+                  >
                     <div className="grey-text">
                       <MDBInput
                         name="login"
-                        label="Type your email"
+                        label="Type your login"
                         icon="envelope"
-                        group
-                        type="email"
-                        validate
-                        error="wrong"
-                        success="right"
+                        type="text"
+                        value={this.state.login}
                         getValue={this.handleInputChange("login")}
-                      />
+                      >
+                        <div style={{ fontSize: 12, color: "red" }}>
+                          {this.state.loginError}
+                        </div>
+                      </MDBInput>
                       <MDBInput
                         name="password"
                         label="Type your password"
                         icon="lock"
-                        group
                         type="password"
-                        validate
+                        value={this.state.password}
                         getValue={this.handleInputChange("password")}
-                      />
+                      >
+                        <div style={{ fontSize: 12, color: "red" }}>
+                          {this.state.passwordError}
+                        </div>
+                      </MDBInput>
                     </div>
                     <div className="text-center">
-                      <MDBBtn onClick={this.sender}>Login</MDBBtn>
+                      <MDBBtn type="submit">Login</MDBBtn>
                     </div>
                   </form>
                 </MDBCol>

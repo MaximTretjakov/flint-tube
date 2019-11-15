@@ -13,7 +13,7 @@ class Login extends Component {
 
 
     sender = () => {
-      let p =this.props.value;
+      let closeModal = this.props.value;
         axios.post('http://127.0.0.1:8000/rest-auth/login/', {
             username: this.state.login,
             email: '',
@@ -22,7 +22,7 @@ class Login extends Component {
           .then(function (response) {
             console.log(response);
             if(response.status === 200){
-              p();
+              closeModal();
             }
           })
           .catch(function (error) {

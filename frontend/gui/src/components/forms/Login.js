@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { MDBContainer, MDBCol, MDBRow, MDBInput, MDBBtn } from 'mdbreact';
 import axios from 'axios';
+import { sha256 } from 'js-sha256';
 
 
 const initialState = {
@@ -47,9 +48,9 @@ class Login extends Component {
       event.preventDefault();
       const isValid = this.validate();
       if (isValid) {
-        console.log(this.state);
         // clear form
         this.setState(initialState);
+        // send from data
         this.sender();
       }
     };
@@ -58,9 +59,9 @@ class Login extends Component {
     sender = () => {
       let closeModal = this.props.value;
         axios.post('http://127.0.0.1:8000/rest-auth/login/', {
-            username: this.state.login,
+            username: sha256(this.state.login),
             email: '',
-            password: this.state.password
+            password: sha256(this.state.password)
           })
           .then(function (response) {
             console.log(response);

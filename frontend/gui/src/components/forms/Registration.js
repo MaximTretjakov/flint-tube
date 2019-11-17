@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
 import axios from 'axios';
-import { sha256 } from 'js-sha256';
 
 
 const initialState = {
@@ -72,10 +71,10 @@ class Register extends Component {
   sender = () => {
     let closeModal = this.props.value;
       axios.post('http://127.0.0.1:8000/rest-auth/registration/', {
-          username: sha256(this.state.login),
-          email: sha256(this.state.email),
-          password1: sha256(this.state.password1),
-          password2: sha256(this.state.password2)
+          username: this.state.login,
+          email: this.state.email,
+          password1: this.state.password1,
+          password2: this.state.password2
         })
         .then(function (response) {
           if(response.status === 201){

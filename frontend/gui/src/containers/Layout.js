@@ -5,16 +5,19 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import Login from '../components/forms/Login'
 import Register from '../components/forms/Registration'
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 
 class NavbarContainer extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
         modalLogin: false,
-        modalRegistration: false
+        modalRegistration: false,
+        isLogin: false
       };
       this.onClick = this.onToggleLogin.bind(this);
       this.onClick = this.onToggleRegistration.bind(this);
+      this.updState = this.updState.bind(this);
   }
 
   onToggleLogin = () => {
@@ -26,6 +29,12 @@ class NavbarContainer extends React.Component {
   onToggleRegistration = () => {
     this.setState({
       modalRegistration: !this.state.modalRegistration
+    });
+  }
+
+  updState = () => {
+    this.setState({
+      isLogin: !this.state.isLogin
     });
   }
 
@@ -42,14 +51,28 @@ class NavbarContainer extends React.Component {
               </MDBNavbarBrand>
               <MDBNavbarToggler onClick={ this.onClick } />
               <MDBCollapse isOpen = { this.state.collapse } navbar>
-                <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBNavLink to="#" onClick={this.onToggleLogin}><strong>Sign in</strong></MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#" onClick={this.onToggleRegistration}><strong>Sign up</strong></MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
+                
+                  {this.state.isLogin ? 
+                  ( 
+                    <MDBNavbarNav right>
+                      <MDBNavItem>
+                        <NavLink to='#'>
+                          <h5>You are logged in !!!</h5>
+                        </NavLink>
+                      </MDBNavItem>
+                    </MDBNavbarNav>      
+                  ) :
+                  (
+                    <MDBNavbarNav right>        
+                    <MDBNavItem>
+                      <MDBNavLink to="#" onClick={this.onToggleLogin}><strong>Sign in</strong></MDBNavLink>
+                    </MDBNavItem>
+                    <MDBNavItem>
+                      <MDBNavLink to="#" onClick={this.onToggleRegistration}><strong>Sign up</strong></MDBNavLink>
+                    </MDBNavItem>
+                    </MDBNavbarNav>
+                  )}
+                
               </MDBCollapse>
             </MDBNavbar>
           </header>
@@ -67,7 +90,7 @@ class NavbarContainer extends React.Component {
         <MDBModal isOpen={this.state.modalLogin} toggle={this.onToggleLogin}>
           <MDBModalHeader toggle={this.onToggleLogin}>MDBModal title</MDBModalHeader>
           <MDBModalBody>
-            <Login value={this.onToggleLogin}/>
+            <Login value={this.onToggleLogin} updState={this.updState}/>
           </MDBModalBody>
         </MDBModal>
         </MDBContainer>

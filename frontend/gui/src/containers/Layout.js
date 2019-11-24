@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBContainer, MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, 
-         MDBCollapse, MDBNavItem, MDBNavLink, MDBModal, MDBModalBody, MDBModalHeader, MDBBtn } from 'mdbreact';
+         MDBCollapse, MDBNavItem, MDBNavLink, MDBModal, MDBModalBody, MDBModalHeader } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import Login from '../components/forms/Login'
@@ -40,7 +40,6 @@ class NavbarContainer extends React.Component {
 
   render() {
     const bgPink = {backgroundColor: 'black'}
-    const container = {height: 1300}
     return(
       <div>
         <Router>
@@ -77,16 +76,9 @@ class NavbarContainer extends React.Component {
             </MDBNavbar>
           </header>
         </Router>
-        <MDBContainer style={container} className="text-center mt-5 pt-5">
-          <h2>This Navbar is fixed</h2>
-          <h5>It will always stay visible on the top, even when you scroll down</h5>
-          <br/>
-          <p>Full page intro with background image will be always displayed in full screen mode, regardless of device</p>
-        </MDBContainer>
 
         {/* Modal login form */}
         <MDBContainer>
-        <MDBBtn onClick={this.onToggleLogin}>Modal</MDBBtn>
         <MDBModal isOpen={this.state.modalLogin} toggle={this.onToggleLogin}>
           <MDBModalHeader toggle={this.onToggleLogin}>MDBModal title</MDBModalHeader>
           <MDBModalBody>
@@ -97,7 +89,6 @@ class NavbarContainer extends React.Component {
 
         {/* Modal registration form */}
         <MDBContainer>
-        <MDBBtn onClick={this.onToggleRegistration}>Modal</MDBBtn>
         <MDBModal isOpen={this.state.modalRegistration} toggle={this.onToggleRegistration}>
           <MDBModalHeader toggle={this.onToggleRegistration}>MDBModal title</MDBModalHeader>
           <MDBModalBody>
@@ -105,8 +96,7 @@ class NavbarContainer extends React.Component {
           </MDBModalBody>
         </MDBModal>
         </MDBContainer>
-
-
+        
       </div>
     );
   }

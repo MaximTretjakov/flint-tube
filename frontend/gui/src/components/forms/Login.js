@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { MDBContainer, MDBCol, MDBRow, MDBInput, MDBBtn } from 'mdbreact';
 import axios from 'axios';
 
-
 const initialState = {
   login: "",
   password: "",

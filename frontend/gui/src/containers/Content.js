@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import axios from 'axios';
 
 import Player from '../components/webPlayer/player'
@@ -37,30 +37,37 @@ class ContentContainer extends React.Component {
         if(status) {
             const videoJsOptions = {
                 autoplay: true,
-                width: '300', 
-                height: '300',
+                width: '640', 
+                height: '480',
                 sources: [{
                     src: this.state.streamKey,
                     type: 'application/x-mpegURL'
                 }]
               }
               
-            const container = {height: 1300}
+            // const container = {height: 1300}
             return(
-                <MDBContainer style={container} className="text-center mt-5 pt-5">
-                    <Player { ...videoJsOptions } />
+                <MDBContainer style={{ "marginLeft": "120px" }} className='container-fluid mt-5 pt-5'>
+                    <MDBRow className="row">
+                        <MDBCol className="col-lg-10">
+                            <Player { ...videoJsOptions } />
+                        </MDBCol>
+                        <MDBCol className="col-lg-2">
+                            <h4>Chat</h4>
+                        </MDBCol>
+                    </MDBRow>
                 </MDBContainer>
             );
-        } else {
-            const container = {height: 1300}
-            return(
-                <MDBContainer style={container} className="text-center mt-5 pt-5">
-                    <h2>Waiting...</h2>
-                </MDBContainer>
-            )
-        }
+            } else {
+                // const container = {height: 1300}
+                return(
+                    <MDBContainer className="text-center mt-5 pt-5">
+                        <h2>Waiting...</h2>
+                    </MDBContainer>
+                )
+            }
         
-    }
+        }
 }
 
 export default ContentContainer;

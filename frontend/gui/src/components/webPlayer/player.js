@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCard, MDBCardTitle, MDBCardText, MDBContainer } from "mdbreact";
+import { MDBCard, MDBCardText } from "mdbreact";
 
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
@@ -24,19 +24,17 @@ class Player extends React.Component {
 
   render(){
       return (
-          <MDBContainer>
-            <MDBCard className="card-body" style={{ width: "22rem", marginTop: "1rem" }}>
-              <MDBCardTitle>Panel Title</MDBCardTitle>
+          // <MDBContainer>
+            <MDBCard className="card-body" style={{ width: "680px", marginTop: "1rem" }}>
               <MDBCardText>
                 <video ref={ node => this.videoNode = node } width={this.props.width} height={this.props.height} className="video-js vjs-default-skin" controls>
                 </video>
               </MDBCardText>
               <div className="flex-row">
-                <a href="#!">MDBCard link</a>
-                <a href="#!" style={{ marginLeft: "1.25rem" }}>Another link</a>
+                <h4><span className="badge pill badge-danger">Online</span></h4>
               </div>
             </MDBCard>
-          </MDBContainer>
+          // </MDBContainer>
       );
   }
 }

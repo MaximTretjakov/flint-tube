@@ -1,7 +1,10 @@
 Flint-tube is a simple video streaming service.
 
-Build on nginx + nginx-rtmp-module -> http://nginx-rtmp.blogspot.com (arut/nginx-rtmp-module)
+Build on nginx + nginx-rtmp-module -> 
+http://nginx-rtmp.blogspot.com (arut/nginx-rtmp-module)
+
 Also Django + DRF -> backend
+
 React -> fronend
 
 How to :

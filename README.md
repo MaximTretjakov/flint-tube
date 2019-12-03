@@ -5,7 +5,7 @@ http://nginx-rtmp.blogspot.com (arut/nginx-rtmp-module)
 
 Also Django + DRF -> backend
 
-React -> fronend
+React -> frontend
 
 How to :
 

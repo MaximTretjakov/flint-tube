@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/MaximTretjakov/flint-tube.svg?branch=master)](https://travis-ci.org/MaximTretjakov/flint-tube)
 
-Flint-tube is a simple video streaming service.
+Flint-tube is a simple video streaming service.<br/>
 
 Build on nginx + nginx-rtmp-module -> 
 http://nginx-rtmp.blogspot.com (arut/nginx-rtmp-module)

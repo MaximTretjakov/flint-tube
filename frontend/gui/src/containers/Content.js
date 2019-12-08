@@ -45,7 +45,6 @@ class ContentContainer extends React.Component {
                 }]
               }
               
-            // const container = {height: 1300}
             return(
                 <MDBContainer style={{ "marginLeft": "120px" }} className='container-fluid mt-5 pt-5'>
                     <MDBRow className="row">
@@ -59,7 +58,6 @@ class ContentContainer extends React.Component {
                 </MDBContainer>
             );
             } else {
-                // const container = {height: 1300}
                 return(
                     <MDBContainer className="text-center mt-5 pt-5">
                         <h2>Waiting...</h2>

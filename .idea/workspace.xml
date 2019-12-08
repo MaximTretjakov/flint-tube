@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6de480a8-9f27-4234-b613-58f22b6c09ea" name="Default Changelist" comment="Fix close modal after success login.">
+      <change afterPath="$PROJECT_DIR$/.idea/flint-tube.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/gui/src/components/personal/Personal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/gui/src/containers/Switcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/chardetect" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/django-admin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/django-admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/pip3.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python3.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/sqlformat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/components/forms/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/components/forms/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/components/webPlayer/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/components/webPlayer/player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/containers/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/containers/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/containers/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/containers/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/index.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="4b825dc642cb6eb9a060e54bf8d69288fbee4904" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$" />
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RekqXTUNat5c5hAiLer1SJ2kHA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="yaml" />
+    <property name="last_opened_file_path" value="/usr/bin/git" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/backend/api_v1/management/commands" />
+      <recent name="$PROJECT_DIR$/backend/api_v1" />
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/api_v1/models" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6de480a8-9f27-4234-b613-58f22b6c09ea" name="Default Changelist" comment="" />
+      <created>1570035139989</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570035139989</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1572698902736</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572698902736</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1573399573347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573399573347</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1573412673199</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573412673199</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix close modal after success login.">
+      <created>1573587963372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573587963372</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Fix close modal after success login." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix close modal after success login." />
+  </component>
+</project>

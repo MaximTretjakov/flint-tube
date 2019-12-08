@@ -2,38 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6de480a8-9f27-4234-b613-58f22b6c09ea" name="Default Changelist" comment="Fix close modal after success login.">
-      <change afterPath="$PROJECT_DIR$/.idea/flint-tube.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/gui/src/components/personal/Personal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/gui/src/containers/Switcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/chardetect" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/django-admin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/django-admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/pip3.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/python3.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/sqlformat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gui/src/components/forms/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/components/forms/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gui/src/components/webPlayer/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/components/webPlayer/player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gui/src/containers/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/containers/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/components/forms/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/components/forms/Registration.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/gui/src/containers/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/containers/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gui/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +54,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="yaml" />
     <property name="last_opened_file_path" value="/usr/bin/git" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />

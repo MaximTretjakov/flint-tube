@@ -1,4 +1,7 @@
 __pycache__/
 *.py[cod]
 venv
-db.sqlite3
+*.sqlite3
+.DS_Store
+.idea
+.idea/workspace.xml

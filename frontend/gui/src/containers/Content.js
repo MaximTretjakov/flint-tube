@@ -14,7 +14,7 @@ class ContentContainer extends React.Component {
     componentDidMount() {
         axios.defaults.headers = {
             "Content-Type": "application/json",
-            Authorization: "Token f639be0a7dcde38ec93256251751c1008a461f98"
+            Authorization: "Token " + this.props.token
         }
 
         axios.get('http://127.0.0.1:8000/api/active-users/')

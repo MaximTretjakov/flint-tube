@@ -1,11 +1,13 @@
 import React from 'react';
+import { Route } from 'react-router-dom'
 import { MDBContainer, MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, 
          MDBCollapse, MDBNavItem, MDBNavLink, MDBModal, MDBModalBody, MDBModalHeader } from 'mdbreact';
-// import { Link } from 'react-router-dom'
+import axios from 'axios';
 
 import Login from '../components/forms/Login'
 import Register from '../components/forms/Registration'
-
+import Content from '../containers/Content'
+import Personal from '../components/personal/Personal'
 
 class NavbarContainer extends React.Component {
   constructor(props) {
@@ -13,11 +15,13 @@ class NavbarContainer extends React.Component {
       this.state = {
         modalLogin: false,
         modalRegistration: false,
-        isLogin: false
+        isLogin: false,
+        token: ''
       };
       this.onClick = this.onToggleLogin.bind(this);
       this.onClick = this.onToggleRegistration.bind(this);
       this.updState = this.updState.bind(this);
+      this.onLogout = this.onLogout.bind(this);
   }
 
   onToggleLogin = () => {
@@ -32,9 +36,31 @@ class NavbarContainer extends React.Component {
     });
   }
 
-  updState = () => {
+  onLogout = () => {
+      axios.defaults.headers = {
+        "Content-Type": "application/json",
+        Authorization: "Token " + this.state.token
+      }
+
+      axios.post('http://127.0.0.1:8000/rest-auth/logout/')
+      .then(function (response) {
+          if (response.status === 200) {
+              console.log('LOGOUT ' + response);
+              this.setState({
+                isLogin: false,
+                token: ''
+              })
+          }
+      }.bind(this))
+      .catch(function (error) {
+          console.log(error);
+      });
+  }
+
+  updState = (token) => {
     this.setState({
-      isLogin: !this.state.isLogin
+      isLogin: !this.state.isLogin,
+      token: token
     });
   }
 
@@ -45,21 +71,24 @@ class NavbarContainer extends React.Component {
           <header>
             <MDBNavbar style={bgPink} dark expand="md" scrolling fixed="top">
               <MDBNavbarBrand href="/">
-                  <strong>Flint - tube</strong>
+                <strong>Flint - tube</strong>
               </MDBNavbarBrand>
-              <MDBNavbarToggler onClick={ this.onClick } />
-              <MDBCollapse isOpen = { this.state.collapse } navbar>
+              <MDBNavbarToggler onClick={this.onClick} />
+              <MDBCollapse isOpen = {this.state.collapse} navbar>
                 
                   {this.state.isLogin ? 
                   ( 
                     <MDBNavbarNav right>
                       <MDBNavItem>
-                        <MDBNavLink to="/personal">
-                          <strong>Hello Some User</strong>
+                        <MDBNavLink to="/personal/">
+                          <strong>Enter</strong>
                         </MDBNavLink>
+                        {/* <MDBNavLink to="/">
+                          <strong>Enter</strong>
+                        </MDBNavLink> */}
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="/logout">
+                        <MDBNavLink to="#" onClick={this.onLogout}>
                           <strong>Logout</strong>
                         </MDBNavLink>
                       </MDBNavItem>
@@ -83,6 +112,20 @@ class NavbarContainer extends React.Component {
               </MDBCollapse>
             </MDBNavbar>
           </header>
+
+          {this.state.isLogin ?
+            (
+              <MDBContainer className="text-center mt-5 pt-5">
+                <Route exact path='/' component={() => <Content token={this.state.token} />}/>
+                <Route exact path='/personal/' component={Personal}/>
+              </MDBContainer>
+            ):
+            (
+              <MDBContainer className="text-center mt-5 pt-5">
+                <h2>Authtorize please.</h2>
+              </MDBContainer>
+            )
+          }
 
         {/* Modal login form */}
         <MDBContainer>

@@ -57,21 +57,27 @@ class Login extends Component {
     sender = () => {
       let closeModal = this.props.value;
       let updState = this.props.updState;
-        axios.post('http://127.0.0.1:8000/rest-auth/login/', {
-            username: this.state.login,
-            email: '',
-            password: this.state.password
-          })
-          .then(function (response) {
-            console.log(response);
-            if(response.status === 200){
-              closeModal();
-              updState();
-            }
-          })
-          .catch(function (error) {
-            console.log(error);
-          });     
+
+      axios.defaults.headers = {
+        "Content-Type": "application/json"
+      }
+
+      axios.post('http://127.0.0.1:8000/rest-auth/login/', {
+          username: this.state.login,
+          email: '',
+          password: this.state.password
+        })
+        .then(function (response) {
+          console.log(response);
+          console.log(response.data['key']);
+          if(response.status === 200){
+            updState(response.data['key']);
+            closeModal();
+          }
+        })
+        .catch(function (error) {
+          console.log(error);
+        });     
     };
 
 

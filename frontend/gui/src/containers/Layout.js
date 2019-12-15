@@ -8,8 +8,9 @@ import Login from '../components/forms/Login'
 import Register from '../components/forms/Registration'
 import Content from '../containers/Content'
 import Personal from '../components/personal/Personal'
+import Logout from '../components/forms/Logout'
 
-class NavbarContainer extends React.Component {
+class Container extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
@@ -65,11 +66,11 @@ class NavbarContainer extends React.Component {
   }
 
   render() {
-    const bgPink = {backgroundColor: 'black'}
+    const bg = {backgroundColor: 'black'}
     return(
       <div>
           <header>
-            <MDBNavbar style={bgPink} dark expand="md" scrolling fixed="top">
+            <MDBNavbar style={bg} dark expand="md" scrolling fixed="top">
               <MDBNavbarBrand href="/">
                 <strong>Flint - tube</strong>
               </MDBNavbarBrand>
@@ -83,12 +84,9 @@ class NavbarContainer extends React.Component {
                         <MDBNavLink to="/personal/">
                           <strong>Enter</strong>
                         </MDBNavLink>
-                        {/* <MDBNavLink to="/">
-                          <strong>Enter</strong>
-                        </MDBNavLink> */}
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#" onClick={this.onLogout}>
+                        <MDBNavLink to="/logout/" onClick={this.onLogout}>
                           <strong>Logout</strong>
                         </MDBNavLink>
                       </MDBNavItem>
@@ -115,15 +113,16 @@ class NavbarContainer extends React.Component {
 
           {this.state.isLogin ?
             (
-              <MDBContainer className="text-center mt-5 pt-5">
+              <div>
                 <Route exact path='/' component={() => <Content token={this.state.token} />}/>
                 <Route exact path='/personal/' component={Personal}/>
-              </MDBContainer>
+                <Route exact path='/logout/' component={Logout}/>
+              </div>
             ):
             (
-              <MDBContainer className="text-center mt-5 pt-5">
+              <div>
                 <h2>Authtorize please.</h2>
-              </MDBContainer>
+              </div>
             )
           }
 
@@ -152,4 +151,4 @@ class NavbarContainer extends React.Component {
   }
 }
 
-export default NavbarContainer;
+export default Container;

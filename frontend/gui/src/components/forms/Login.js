@@ -46,9 +46,7 @@ class Login extends Component {
       event.preventDefault();
       const isValid = this.validate();
       if (isValid) {
-        // clear form
         this.setState(initialState);
-        // send form data
         this.sender();
       }
     };

@@ -9,6 +9,7 @@
     "mdbreact": "^4.22.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "video.js": "^7.6.6",
     "videojs-contrib-hls": "^5.15.0"

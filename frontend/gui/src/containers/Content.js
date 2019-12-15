@@ -3,6 +3,7 @@ import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import axios from 'axios';
 
 import Player from '../components/webPlayer/player'
+import Chat from '../components/chat/Chat'
 
 class ContentContainer extends React.Component {
 
@@ -44,18 +45,20 @@ class ContentContainer extends React.Component {
                     type: 'application/x-mpegURL'
                 }]
               }
-              
+            const mar = {margin: "101px 50px 100px 50px"}
             return(
-                <MDBContainer style={{ "marginLeft": "120px" }} className='container-fluid mt-5 pt-5'>
+                <div style={mar}>
                     <MDBRow className="row">
-                        <MDBCol className="col-lg-10">
+                        <MDBCol className="col-lg-6">
                             <Player { ...videoJsOptions } />
                         </MDBCol>
-                        <MDBCol className="col-lg-2">
-                            <h4>Chat</h4>
+                        <MDBCol className="col-lg-2">  
+                        </MDBCol>
+                        <MDBCol className="col-lg-4">
+                            <Chat />
                         </MDBCol>
                     </MDBRow>
-                </MDBContainer>
+                </div>           
             );
             } else {
                 return(

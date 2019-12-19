@@ -7,7 +7,11 @@ import axios from 'axios';
 import Login from '../components/forms/Login'
 import Register from '../components/forms/Registration'
 import Content from '../containers/Content'
+<<<<<<< HEAD
+import Main from '../components/personal/Main'
+=======
 import Personal from '../components/personal/Personal'
+>>>>>>> origin/master
 import Logout from '../components/forms/Logout'
 
 class Container extends React.Component {
@@ -81,8 +85,13 @@ class Container extends React.Component {
                   ( 
                     <MDBNavbarNav right>
                       <MDBNavItem>
+                        <MDBNavLink to="/">
+                          <strong>Main</strong>
+                        </MDBNavLink>
+                      </MDBNavItem>
+                      <MDBNavItem>
                         <MDBNavLink to="/personal/">
-                          <strong>Enter</strong>
+                          <strong>Personal</strong>
                         </MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
@@ -114,8 +123,13 @@ class Container extends React.Component {
           {this.state.isLogin ?
             (
               <div>
+<<<<<<< HEAD
+                <Route exact path='/' component={Main}/>
+                <Route exact path='/personal/' component={() => <Content token={this.state.token}/>}/>
+=======
                 <Route exact path='/' component={() => <Content token={this.state.token} />}/>
                 <Route exact path='/personal/' component={Personal}/>
+>>>>>>> origin/master
                 <Route exact path='/logout/' component={Logout}/>
               </div>
             ):

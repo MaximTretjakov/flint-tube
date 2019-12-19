@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import Player from '../components/webPlayer/player'
 import Chat from '../components/chat/Chat'
+import Key from '../components/personal/Key'
 
 class ContentContainer extends React.Component {
 
@@ -52,7 +53,8 @@ class ContentContainer extends React.Component {
                         <MDBCol className="col-lg-6">
                             <Player { ...videoJsOptions } />
                         </MDBCol>
-                        <MDBCol className="col-lg-2">  
+                        <MDBCol className="col-lg-2"> 
+                            <Key token={this.props.token}/>
                         </MDBCol>
                         <MDBCol className="col-lg-4">
                             <Chat />

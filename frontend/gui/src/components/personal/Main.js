@@ -9,34 +9,34 @@ class Main extends React.Component{
         return (
             <MDBContainer className="mt-5 pt-5">
                 <MDBRow>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-            </MDBRow>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                </MDBRow>
 
-            <MDBRow>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-            </MDBRow>
+                <MDBRow>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                </MDBRow>
 
-            <MDBRow>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-            </MDBRow>
+                <MDBRow>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                </MDBRow>
 
-            <MDBRow>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-            </MDBRow>
+                <MDBRow>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                </MDBRow>
 
-            <MDBRow>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-            </MDBRow>
+                <MDBRow>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                </MDBRow>
             </MDBContainer>
         )
     };

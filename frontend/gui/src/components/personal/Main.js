@@ -7,35 +7,41 @@ import UserCard from '../../containers/Card'
 class Main extends React.Component{
     render(){
         return (
-            <MDBContainer className="mt-5 pt-5">
-                <MDBRow>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+            <MDBContainer fluid={true} className="mt-5 pt-5">
+                <MDBRow style={{marginLeft: "25px", marginBottom: "10px"}}>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
                 </MDBRow>
 
-                <MDBRow>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                <MDBRow style={{marginLeft: "25px", marginBottom: "10px"}}>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
                 </MDBRow>
 
-                <MDBRow>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                <MDBRow style={{marginLeft: "25px", marginBottom: "10px"}}>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
                 </MDBRow>
 
-                <MDBRow>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                </MDBRow>
-
-                <MDBRow>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
-                    <MDBCol style={{margin: "10px"}}><UserCard/></MDBCol>
+                <MDBRow style={{marginLeft: "25px", marginBottom: "10px"}}>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
+                    <MDBCol size="2"><UserCard/></MDBCol>
                 </MDBRow>
             </MDBContainer>
         )
